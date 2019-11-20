@@ -4,23 +4,38 @@ using UnityEngine;
 
 public class EnemyDestroyer : MonoBehaviour
 {
+    MyGameManager GameManager;
+    [SerializeField] int enemypoints = 0;
     //Transform bulletPrefab;
 
     // Start is called before the first frame update
     void Start()
     {
-        //var bullet = Instantiate(bulletPrefab) as Transform;
-       // Physics2D.IgnoreCollision(bullet.GetComponent<Collider2D>(), GetComponent<Collider2D>());
-
+        GameManager = FindObjectOfType<MyGameManager>();
+        
 
     }
 
-     public void OnCollisionEnter2D(Collision2D collision){
+     public void OnCollisionEnter2D(Collision2D other){
 
-       Destroy(gameObject);
-       Debug.Log("collision");
-       GameData.Score ++;
-       Debug.Log(GameData.Score);
+        if (other.gameObject.tag == "Bullet")
+        {
+            Destroy(other.gameObject);
+            Destroy(this.gameObject);
+            Debug.Log("collision");
+            GameManager.IncreaseScore(enemypoints);
+        }
+      
    }
-   
+
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Enemy")
+        {
+
+            Destroy(other.gameObject);
+        }
+
+    }
+
 }

@@ -7,8 +7,10 @@ public abstract class GameData : MonoBehaviour
     // Start is called before the first frame update
 
     private static int _score = 0;
+    
 
-   public static int Score
+
+    public static int Score
     {
         get { return _score; }
         set { _score = value; }

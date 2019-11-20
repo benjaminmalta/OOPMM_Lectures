@@ -152,10 +152,10 @@ RectTransform:
   m_Father: {fileID: 186341484}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -83, y: -98}
-  m_SizeDelta: {x: 51.627, y: 18}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 98.3, y: 39.4}
+  m_SizeDelta: {x: 195.2, y: 74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &107292515
 MonoBehaviour:
@@ -177,11 +177,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 16
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 1
-    m_MaxSize: 40
+    m_MinSize: 0
+    m_MaxSize: 300
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -245,7 +245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -425,7 +425,7 @@ GameObject:
   - component: {fileID: 817818999}
   - component: {fileID: 817818998}
   m_Layer: 0
-  m_Name: Game
+  m_Name: GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -440,7 +440,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 817818997}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59cf0e4011a03fd44953b464e4240070, type: 3}
+  m_Script: {fileID: 11500000, guid: b814d8b5bc20f934cbd2a73d94977548, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   scoreComponent: {fileID: 1656014641}
@@ -734,7 +734,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -774,6 +774,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 188379ad2d9b8b247b09f8d295cd1fff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemypoints: 0
 --- !u!1 &1586515279
 GameObject:
   m_ObjectHideFlags: 0
@@ -925,10 +926,10 @@ RectTransform:
   m_Father: {fileID: 186341484}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -24, y: -98}
-  m_SizeDelta: {x: 66.375, y: 18}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 321.3, y: 39.4}
+  m_SizeDelta: {x: 251.1, y: 74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1656014641
 MonoBehaviour:
@@ -950,11 +951,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 16
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 1
-    m_MaxSize: 40
+    m_MinSize: 0
+    m_MaxSize: 300
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
